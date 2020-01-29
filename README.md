@@ -8,6 +8,6 @@ I was inspired to create this ToDo list to assist with better planning and organ
 - A custom created API that displays randomized positive, motivating, and inspirational quotes.
 - Changing the text date entry to a calender date format.
 
-*Please note: The edit button is currently non-working, but is in the process of being fixed.
+*Please note: The edit button is currently not working, but is in the process of being fixed.
  
 
