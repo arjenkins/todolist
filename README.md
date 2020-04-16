@@ -6,8 +6,6 @@ I was inspired to create this ToDo list to assist with better planning and organ
 ## Upcoming Features
 - A message system via email to alert the user when they are less than a week away from their task completion date.
 - A custom created API that displays randomized positive, motivating, and inspirational quotes.
-- Changing the text date entry to a calender date format.
 
-*Please note: The edit button is currently not working, but is in the process of being fixed.
  
 
