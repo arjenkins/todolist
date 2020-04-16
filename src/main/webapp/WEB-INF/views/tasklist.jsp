@@ -54,7 +54,7 @@
 								for="defaultCheck1">Task Completed</label>
 						</div></td>
 					<td><button>
-							<a href="/edit/${task.id}">FIXME: Edit</a>
+							<a href="/edit/${task.id}">Edit</a>
 						</button></td>
 					<td><button>
 							<a href="/delete-task/${task.id}"onclick="return confirm('Are you sure?')">Delete</a>
