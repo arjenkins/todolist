@@ -19,24 +19,17 @@
 <title>ToDo.</title>
 </head>
 <body>
-<div class=div1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class=div2>
+	<div class=div1>
+		<br> <br> <br> <br> <br> <br>
+		<div class=div2>
 
-		<h2>ToDo... Your personal, online task list.</h2>
-	</div>
-	<br>
-	<br>
+			<h2>ToDo... Your personal, online task list.</h2>
+		</div>
+		<br> <br>
 
-	<h2 style="text-align: center;">FIXME: put randomized personal
-		quote here!</h2>
-	<br>
-	<br>
+		<h2 style="text-align: center;">FIXME: put randomized personal
+			quote here!</h2>
+		<br> <br>
 	</div>
 	<br>
 	<p>Welcome to your personal ToDo list, ${ user.firstName}.</p>
@@ -60,8 +53,11 @@
 								id="defaultCheck1"> <label class="form-check-label"
 								for="defaultCheck1">Task Completed</label>
 						</div></td>
-					<td><button><a href="/edit/${ task.id }">FIXME: Edit</a></button></td>
-					<td><button><a href="/delete-task/${ task.id }"onclick="return confirm('Are you sure?')">Delete</a>
+					<td><button>
+							<a href="/edit/${task.id}">FIXME: Edit</a>
+						</button></td>
+					<td><button>
+							<a href="/delete-task/${task.id}"onclick="return confirm('Are you sure?')">Delete</a>
 						</button></td>
 				</tr>
 			</c:forEach>
@@ -75,8 +71,12 @@
 	<br>
 	<br>
 	<br>
-	<button><a href="/add-task">Add task</a></button>
-	<button><a href="/logout">logout</a></button>
+	<button>
+		<a href="/add-task">Add task</a>
+	</button>
+	<button>
+		<a href="/logout">logout</a>
+	</button>
 	<br>
 	</div>
 	<p align="center">Copyright© Anesha Robinson Jenkins 2019</p>

@@ -6,7 +6,6 @@ h1 {
 h2 {
 	font-family: Palatino, 'Palatino Linotype', serif;
 	color: white;
-	
 }
 
 h3 {
@@ -16,19 +15,18 @@ h3 {
 
 .div1 {
 	background-image:
-	url("https://images.pexels.com/photos/60006/spring-tree-flowers-meadow-60006.jpeg");
+		url("https://images.pexels.com/photos/60006/spring-tree-flowers-meadow-60006.jpeg");
 	background-size: cover;
 }
 
 .div2 {
 	border: 10px solid white;
- 	max-width: 650px;
- 	text-align: center;
- 	margin: auto;
+	max-width: 650px;
+	text-align: center;
+	margin: auto;
 }
 
-.center_div{
-    margin: 0 auto;
-    width:30% /* value of your choice which suits your alignment */
+.center_div {
+	margin: 0 auto;
+	width: 30% /* value of your choice which suits your alignment */
 }
-

@@ -8,31 +8,31 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="task")
+@Table(name = "task")
 public class Task {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
-	@ManyToOne
+ 	@ManyToOne
 	User user;
 	String taskName;
 	String description;
 	String dueDate;
-	boolean complete;
+	
 
-	public Task(Long id, User user, String taskName, String description, String dueDate, boolean complete) {
+	public Task(Long id, User user, String taskName, String description, String dueDate) {
 		super();
 		this.id = id;
 		this.user = user;
 		this.taskName = taskName;
 		this.description = description;
 		this.dueDate = dueDate;
-		this.complete = complete;
+		
 	}
 
 	public Task() {
-		super();
-
+		
 	}
 
 	public String gettaskName() {
@@ -42,7 +42,6 @@ public class Task {
 	public void settaskName(String taskName) {
 		this.taskName = taskName;
 	}
-
 
 	public Long getId() {
 		return id;
@@ -76,20 +75,11 @@ public class Task {
 		this.dueDate = dueDate;
 	}
 
-	public boolean isComplete() {
-		return complete;
-	}
-
-	public void setComplete(boolean complete) {
-		this.complete = complete;
-	}
 
 	@Override
 	public String toString() {
-		return "Task [id=" + id + ", user=" + user + ", taskName=" + taskName + ", description=" + description + ", complete="
-				+ complete + ", dueDate=" + dueDate + "]";
+		return "Task [id=" + id + ", user=" + user + ", taskName=" + taskName + ", description=" + description
+				+ ", dueDate=" + dueDate + "]";
 	}
-
-	
 
 }

@@ -1,6 +1,5 @@
 package com.personal.tasklist;
 
-
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -11,19 +10,19 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="user")
+@Table(name = "user")
 public class User {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id;
 	String email;
 	String password;
 	String firstName;
 	String lastName;
 
-
 	public User() {
-	
+
 		// TODO Auto-generated constructor stub
 	}
 
@@ -35,11 +34,11 @@ public class User {
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		
+
 	}
-	
-   @OneToMany(mappedBy="user")
-   private Set<Task> task;
+
+	@OneToMany(mappedBy = "user")
+	private Set<Task> task;
 
 	public long getId() {
 		return id;
@@ -81,11 +80,10 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", email=" + email + ", password=" + password + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", tasks=" + "]";
+		return "User [id=" + id + ", email=" + email + ", password=" + password + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", tasks=" + "]";
 	}
 
 }

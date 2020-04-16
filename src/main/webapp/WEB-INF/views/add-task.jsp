@@ -16,41 +16,47 @@
 <link rel="stylesheet" href="/style.css" />
 <head>
 <meta charset="UTF-8">
-<title>ToDo.</title>
+<title>ToDo</title>
 </head>
 <body>
 	<div class=div1>
-		<br>
-		<br> 
-		<br> 
-		<br> 
-		<br> 
-		<br>
+		<br> <br> <br> <br> <br> <br>
 		<div class=div2>
 			<h2>ToDo... Your personal, online task list.</h2>
 		</div>
-		<br> <br> <br> <br>
-		<h2 style="text-align: center;">Welcome. Please login.</h2>
-		<form action="/login" method="post">
+		<br> <br>
+
+		<h2 style="text-align: center;">Add tasks to your list</h2>
+		<form action="/add-task" method="post">
 			<div class="container center_div">
-				<div class="col-md-12">
-					<input type="email" class="form-control" placeholder="Email"name="email" required /> 
-						<br> 
-						<input type="text"class="form-control" placeholder="Password" name="password"
-						required /> <br>
-					<button type="submit" class="btn btn-primary mb-2">log in</button>
+				<div class="form-group row">
+					<div class="col-sm-8">
+						<input type="text" class="form-control"
+							placeholder="Name of Task:" name="taskName" />
+					</div>
 				</div>
+				<div class="form-group row">
+					<div class="col-sm-10">
+						<textarea class="form-control" placeholder="Task Description:"
+							name="description" min="3" max="400" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+
+					<div class="col-sm-6">
+						<input type="text" class="form-control" placeholder="Enter due date as MM/DD/YYYY:"
+							name="dueDate" />
+					</div>
+				</div>
+				<button>Save</button>
+				<button>
+					<a href="/tasklist" class="button">Cancel</a>
+				</button>
+				<br> <br> <br> <br> <br> <br> <br>
+				<br> <br>
 			</div>
-			<br> 
-			<br> 
-			<br> 
-			<br> 
-			<br> 
-			<br> 
-			<br>
-			<br> 
-			<br>
 		</form>
+
 	</div>
 	<p align="center">Copyright© Anesha Robinson Jenkins 2019</p>
 </body>
